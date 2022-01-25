@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="heading">Tennis Quiz</h2>
+        </div>
+        <div id="start"><button type="button" class="start-btn">Start Quiz</button></div>
+        <div class="hide" id="quiz-container">
+            <div class="quiz-questions">
+                <p id="question-current">Q1) </p>
+            </div>
+                <button type="button" id="a" class="btn">A) </button>
+                <button type="button" id="b" class="btn">A) </button>
+                <button type="button" id="c" class="btn">A) </button>
+                <button type="button" id="d" class="btn">A) </button>
+        </div>
+        <span id="next-question" class= "hide"><button type="button" id="next-btn">Next</button></span>
+        <div id="score-container">
+            <p id="score">Your score: </p>
+            <span class="play-again"><button type="button" id="again-btn">Play again</button></span>
+        </div>
+    </div>
+    <script src="quiz-new.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightskyblue;
+}
+
+.container {
+    display: grid;
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    color: darkblue;
+    padding: 10px;
+}
+
+#start {
+    justify-self: center;
+}
+
+.start-btn {
+    font-size: 25px;
+    border: none;
+    background: white;
+    color: darkblue;
+    border-radius: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#quiz-container {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 40px;
+    justify-self: center;
+    width: 80%;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "question question"
+        "option-a option-b"
+        "option-c option-d";
+}
+
+.quiz-questions {
+    grid-area: question;
+}
+
+.btn {
+    display: grid;
+    padding: 20px 10px;
+    margin: 10px;
+    border-radius: 40px;
+    border: none;
+    font-weight: 900;
+    background: cornflowerblue;
+    /* background: antiquewhite; */
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 80%;
+}
+
+#question-current {
+    grid-area: question;
+    font-family: system-ui;
+    font-size: 20px;
+}
+
+#a {
+    grid-area: option-a;
+}
+
+#b {
+    grid-area: option-b;
+}
+
+#c {
+    grid-area: option-c;
+}
+
+#d {
+    grid-area: option-d;
+}
+
+#next-question {
+    justify-self: center;
+}
+
+#next-btn {
+    font-size: 25px;
+    border: none;
+    background: white;
+    color: darkblue;
+    border-radius: 40px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#score-container {
+    display: none;
+    justify-self: center;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+#score {
+    color: darkblue;
+    font-size: 25px;
+    justify-self: center;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+#again-btn {
+    font-size: 25px;
+    border: none;
+    background: white;
+    color: darkblue;
+    border-radius: 40px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 360px) {
+    .heading {
+        font-size: 25px;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 0px;
+        background: white;
+    }
+    .start-btn {
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 50px 10px;
+        cursor: pointer;
+    }
+    #quiz-container {
+        padding: 20px;
+        width: 100%;
+        /* background: lightskyblue; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "question"
+            "option-a" 
+            "option-b"
+            "option-c"
+            "option-d";
+    }
+    #question-current {
+        font-size: 20px;
+    }
+    .btn {
+        padding: 8px 4px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        font-size: 18px;
+        align-items: center;
+        background: lightskyblue;
+        color: darkblue;
+    }
+    #next-btn {
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 15px;
+    }
+    #score {
+        font-size: 25px;
+        margin: auto 45px;
+    }
+    #again-btn {
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 15px 80px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .heading {
+        font-size: 25px;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    .start-btn {
+        font-size: 20px;
+        border-radius: 25px;
+        padding: 15px;
+        margin: 50px 10px;
+        cursor: pointer;
+    }
+    #quiz-container {
+        padding: 10px;
+        width: 90%;
+        height: 100%;
+        background: white;
+        border-radius: 20px;
+    }
+    .btn {
+        padding: 8px 4px;
+        margin: 10px 5px;
+        font-size: 15px;
+        align-items: center;
+    }
+    #next-btn {
+        font-size: 20px;
+        border-radius: 25px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    #score {
+        font-size: 20px;
+        margin: 10px 60px;
+    }
+    #again-btn {
+        font-size: 20px;
+        border-radius: 25px;
+        padding: 10px;
+        margin: 5px 80px 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
